@@ -1,0 +1,50 @@
+/*!----header------*/
+header{
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,43),rgba(0,0,0,0.5)),
+  url(contact\ us.jpg)no-repeat center center/cover;
+  background-size: cover;
+  position:relatve;
+  
+ 
+}
+.center{
+  text-align:center;
+  color:black;
+
+    font-family: 'Comfortaa', cursive;
+
+
+}
+.center1{
+  text-align:center;
+  color:white;
+  
+    font-family: 'Comfortaa', cursive;
+
+  
+
+}
+/*!----end of header------*/
+/*------banner-----*/
+.banner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:80%;
+}
+/*------end of banner----*/
+/*-----end of find us-----*/
+#find{
+  background:#D1E8E2;
+  margin-top:10px;
+  color:black;
+  font-size:20px;
+
+}
+/*-----end of find us-----*/
+.wow{
+     font-family: 'Comfortaa', cursive;
+
+}
