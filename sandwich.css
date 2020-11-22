@@ -1,0 +1,137 @@
+/*------sandwiches-----*/
+.bg-img{
+  background:#D1E8E2;
+}
+.text-color{
+  color:#b7472a;
+}
+.product-section h2{
+
+font-size:40px;
+
+}
+.product{
+  width:100%;
+  display:block;
+  margin-bottom:20px;
+  transition:all 0.3s ease;
+  margin-left:30px;
+  margin-right:30px;
+}
+.product .img{
+  display:block;
+  border-radius:4px;
+  height:200px;
+  position:relative;
+  transition:0.3s ease;
+  z-index:0;
+}
+.product .img:after{
+  z-index:-1;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  content:'';
+  background:black;
+  opacity:0;
+  border-radius:4px;
+  transition: all 0.6s ease;
+}
+.product.img .icon  .icon-block a{
+  margin: 0 5px;
+  width:60px;
+  height:60px;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.product .img .icons .icon-block a i{
+  color:white;
+}
+.product .text{
+  padding:20px;
+  position:relative;
+}
+.product .text .out, .product .text .day,
+.product .text .week{
+  position: absolute;
+  top:0;
+  left:4px;
+  font-size: 12px;
+  padding: 0 10px;
+  color:#fff;
+}
+.product .text .out{
+  background-color: #b7472a;
+}
+.product .text .day{
+  background: #fe9801;
+}
+.product .text .week{
+  background: #01d28c;
+}
+.product .text h2{
+  font-size:22px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.product .text .category{
+  font-style: italic;
+  color:#fe9801;
+}
+.product .text .price{
+  font-style: italic;
+  color:#fff;
+
+}
+.product:hover .img:after{
+  opacity: .7;
+}
+.product:hover .img:icons{
+  opacity: 1;
+}
+.glow{
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+.glow:hover, glow:focus, glow:active{
+  box-shadow: 1px 1px 8px rgb(5, 236, 167);
+}
+/*------end of sandwiches-----*/
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  
+}
+.section { 
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  clip-path:polygon(0 15%, 100% 0,100% 85%, 0 100%);
+  background-attachment: fixed;
+}
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg1::after {
+  background-image: url('new.jpg');
+}
