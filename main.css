@@ -1,6 +1,6 @@
 body{
     color:white;
-    background:url("slide3.jpg") top center no-repeat;
+    background:url("come.jpg") top center no-repeat;
     background-size: cover;
     position: relative;
 
@@ -13,7 +13,7 @@ body:before{
     right: 0;
     top:0;
     bottom: 0;
-    background: rgba(19,70,112,0.6);
+    background: rgba(0,0,0,0);
 }
 @media(min-width:1024px){
     body{
@@ -31,10 +31,11 @@ body:before{
     font-size: 48px;
     font-weight: bold;
     line-height: 56px;
-    color: aliceblue;
+    color: white;
 }
 #header h2{
-    color:#eee;
+    color:  white;
+
     margin-bottom: 40px;
     font-size: 22px;
 }
@@ -43,7 +44,7 @@ body:before{
 }
 #header .countdown div{
     text-align: center;
-    border: 2px solid rgba(255,255,255,0.8);
+    border: 2px solid   white;
     border-radius: 8px;
     margin:10px 10px;
     width:100px;
@@ -53,13 +54,13 @@ body:before{
     font-weight: bold;
     font-size: 32px;
     margin-bottom: 15px;
-    color: #fff;
+    color: white;
 }
 #header .countdown div h4{
     font-size:16px;
     font-weight:600;
-    color:#fff;
-}
+    color:  white;}
+
 @media(max-width:575px){
     #header .countdown div{
         width:70px;
@@ -69,12 +70,12 @@ body:before{
     #header .countdown div h3{
         font-size: 28px;
         margin-bottom: 10px;
-        color:#fff;
+        color:  white;
     }
     #header .countdown div h4{
         font-size: 14px;
         font-weight: lighter;
-        color:#fff;
+        color: white;
 
     }
 }
@@ -84,7 +85,7 @@ body:before{
 #header .social-links a{
     font-size: 18px;
     display: linline-block;
-    color:#fff;
+    color:  white;
     line-height: 1;
     padding-top:14px;
     margin: 0 3px;
@@ -93,7 +94,13 @@ body:before{
     width: 48px;
     height: 48px;
     transition: 0.3s;
-    border: 1px solid #fff;
+    border: 1px solid  white;
 }
-#header .social-links a:hover{
-    background: #03c7f8;}
+.me {
+    position: relative;
+    letter-spacing:1.8rem;
+      border-bottom: .1em solid whitesmoke;
+       
+       font-family: 'Comfortaa', cursive;
+      font-size: 30px;
+    }

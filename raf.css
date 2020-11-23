@@ -13,7 +13,9 @@ body {
 }
 
 #page-wraper {
-    background: url(page-bg.jpg) no-repeat center center fixed;
+   
+    background:linear-gradient(rgba(0,0,0,4),rgba(1,0,0,0)),
+    url(rafrafraf.jpg)no-repeat center center/cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -809,3 +811,14 @@ section.contact-me {
         margin-bottom: 20px;
     }
 }
+.me {
+    position: relative;
+    letter-spacing: 0.5rem;
+      border-bottom: .1em solid whitesmoke;
+       
+       font-family: 'Comfortaa', cursive;
+      font-size: 30px;
+    }
+    .wow{
+        font-family: 'Comfortaa', cursive;
+    }
