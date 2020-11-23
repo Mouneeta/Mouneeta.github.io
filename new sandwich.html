@@ -12,21 +12,100 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/dacf80f8ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <link rel="stylesheet" href="sandwich.css">
+     <link rel="stylesheet" href="lol.css">
     
 </head>
+<style> 
+  .me {
+  position: relative;
+    animation: mymove 2s infinite;
+  
+    font-size: 50px;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 20px;}
+  }
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Pacifico|Source+Code+Pro');
+     
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+      
+        #allcomments {
+            width: 90%;
+            margin: 1em 4em 4em 1em;
+            padding: 0%;
+           
+           
+        }
+
+        ul#pastcomments {
+            list-style-type: none;
+        }
+
+        ul#pastcomments li:before {
+            font-family: FontAwesome;
+            content: "\f086";
+            font-size: 40pt;
+            color: gray;
+            margin-left: -42px;
+            padding-right: 10px;
+            position: relative;
+            top: 8px;
+        }
+
+        ul#pastcomments li {
+            margin: 0 0 2em 0;
+            padding: 10px;
+        }
+
+        ul#pastcomments li span {
+            font-size: 80%;
+            color: gray;
+            font-style: italic;
+        }
+
+        form#newcomment textarea {
+            height: 72px;
+        }
+
+        form#newcomment label {
+            display: inline-block;
+            margin: 1em 0 0 0;
+        }
+
+        form#newcomment textarea,
+        form#newcomment input[type="text"] {
+            margin-top: 0;
+        }
+        .again{
+          background-color:#D1E8E2;
+        }
+        .info{
+  background-color: #D1E8E2;
+  color: #116466;
+  font-size: medium;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+  </style>
+
 <body>
 <!---navbar--->
 <nav class="navbar navbar-expand-lg navbar-light bg- #e25822">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="index.html#about"><h1 class="wow">Central Perk</h1></a>
+  <a class="navbar-brand" href="file:///F:/Desktop/central%20perk/index.html#menu"><h1 class="wow">Central Perk</h1></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -49,8 +128,8 @@
 <hr>
  <!----end of navbar------->
 
- <section >
-  
+ <section class="again">
+  <h1 class="wow"><div class="me">New Arrivals</div></h1>
   <!---image slider-->
 <div class="slider">
 
@@ -94,22 +173,65 @@
   </div>
     </section>
   </div>
+  
 <!---end of image slider-->
+<section>
+  <h1 class="wow"><div class="me">Most Popular</div></h1><br>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="cold.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="cold.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="cold.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</section>
 
-<!---site title--
- <section class="site-title d-flex align-items-center justify-content-center">
- 
- <div class="site-background">
- 
- 
- </div>
- </section>
- <hr style="height:2px;border-width:5;color:#116466;background-color:gray">
- ---end of site title-->
+
+
 
 <!----1sandwich------->
     <section class="product-section bg-img ">
-     <div class="container"> <h1 class="wow">Food Items</h1>
+     <div class="container"> <h1 class="wow"><div class="me">Food Items</div></h1>
      <div class="row py-5">
            <div class="col-md-3 d-flex">
              <div class="product glow">
@@ -230,9 +352,31 @@
           </div>
          </div>
        </div>
-       
-       <!---second row end-->
-     </section>
+       <!---comment section--->
+<div class="info">
+  <div id="allcomments">
+  <h3>Comments</h3>
+  <ul id="pastcomments"></ul>
+  <form id="newcomment">
+  <label for="tbName">First Name or Initials</label>
+  <br>
+  <input id="tbName" type="text" maxlength="20" required>
+  <br>
+    <label for="txtComment"><h3>Enter Comment</h3>
+    </label>
+    <br>
+    
+    <textarea id="txComment" maxlength="4096" required style="width:96%"></textarea>
+    <br>
+    <input type="submit" id="btnSubmitComment" value="Submit Comment">
+    
+  
+  </form>
+  </div>
+  </div>
+  </body>
+  
+  <!---end of comment section--><hr>
      <!---footer-->
   <br><hr>
   <footer>
@@ -250,5 +394,67 @@
 </footer>
 <!---end of footer-->
 
-</body>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+ 
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCtnAoRHfEfwLZV3YxUYpxnyuDTQJ8lXFg",
+    authDomain: "blog-54b41.firebaseapp.com",
+    databaseURL: "https://blog-54b41.firebaseio.com",
+    projectId: "blog-54b41",
+    storageBucket: "blog-54b41.appspot.com",
+    messagingSenderId: "194390203669",
+    appId: "1:194390203669:web:ac84acc31a23ef42c01d1c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  //Rootref is the whole database.
+        const rootRef = firebase.database().ref();
+        //commentsRef is just the pageCountsNode
+        const commentsRef = rootRef.child('comments');
+        //Listen for click on Submit Comment button, and post comment.
+        document.getElementById("btnSubmitComment").addEventListener("click", function () {
+            //Replace line breaks in comment with br tags.
+            var newcomment = document.getElementById('txComment').value.replace(/\n/g, "<br>");
+            //Define a new, keyed post.
+            var newPostRef = commentsRef.push();
+            //Fill tne new keyed post with data
+            newPostRef.set({
+                name: document.getElementById('tbName').value.trim(),
+                comment: newcomment.trim(),
+                frompage: location.pathname,
+                when: firebase.database.ServerValue.TIMESTAMP
+            });
+        });
+
+        
+
+        function showpastcomments() {
+            var showat = document.getElementById('pastcomments');
+            //Get comments whose from page equals this page's pathname.
+            var commentsRef = firebase.database().ref('comments/').orderByChild('frompage').equalTo(location.pathname);
+            commentsRef.once('value', function (snapshot) {
+                snapshot.forEach(function (itemSnapshot) {
+                    //Get the object for one snapshot
+                    var itemData = itemSnapshot.val();
+                    var comment = itemData.comment;
+                    var name = itemData.name;
+                    var when = new Date(itemData.when).toLocaleDateString("en-us");
+                    showat.innerHTML += "<li>" + comment + "<span> -- " + name + " (" + when +
+                        ")</span></li>";
+                })
+            })
+        }
+   showpastcomments()
+
+</script>
+    </body>
 </html>
